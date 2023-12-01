@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\bin\Debug\net8.0\lesson4(стек и управляемая куча).exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\bin\Debug\net8.0\lesson4(стек и управляемая куча).deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\bin\Debug\net8.0\lesson4(стек и управляемая куча).runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\bin\Debug\net8.0\lesson4(стек и управляемая куча).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\bin\Debug\net8.0\lesson4(стек и управляемая куча).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\lesson4(стек и управляемая куча).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\lesson4(стек и управляемая куча).AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\lesson4(стек и управляемая куча).AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\lesson4(стек и управляемая куча).csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\lesson4(стек и управляемая куча).sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\lesson4(стек и управляемая куча).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\refint\lesson4(стек и управляемая куча).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\lesson4(стек и управляемая куча).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\lesson4(стек и управляемая куча).genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson4(стек и управляемая куча)\obj\Debug\net8.0\ref\lesson4(стек и управляемая куча).dll

@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\bin\Debug\net8.0\lesson2.exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\bin\Debug\net8.0\lesson2.deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\bin\Debug\net8.0\lesson2.runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\bin\Debug\net8.0\lesson2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\bin\Debug\net8.0\lesson2.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\lesson2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\lesson2.AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\lesson2.AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\lesson2.csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\lesson2.sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\lesson2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\refint\lesson2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\lesson2.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\lesson2.genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson2\obj\Debug\net8.0\ref\lesson2.dll
