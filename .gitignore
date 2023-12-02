@@ -1,0 +1,12 @@
+**.bin
+.suo
+**.v2
+.dll
+.exe
+.pdb
+.AssemblyInfo.cs
+.AssemblyInfoInputs.cache
+.dll
+.pdb
+.sourcelink.json
+.vsidx
