@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "lesson5(Implicit and wxplicit casting_BoxingUnboxing)/1.0.0": {
+        "runtime": {
+          "lesson5(Implicit and wxplicit casting_BoxingUnboxing).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lesson5(Implicit and wxplicit casting_BoxingUnboxing)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

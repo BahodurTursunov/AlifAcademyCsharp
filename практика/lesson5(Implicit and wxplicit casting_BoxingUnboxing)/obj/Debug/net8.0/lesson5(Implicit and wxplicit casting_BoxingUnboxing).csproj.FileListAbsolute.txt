@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\bin\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\bin\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\bin\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\bin\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\bin\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\refint\lesson5(Implicit and wxplicit casting_BoxingUnboxing).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\lesson5(Implicit and wxplicit casting_BoxingUnboxing).genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson5(Implicit and wxplicit casting_BoxingUnboxing)\obj\Debug\net8.0\ref\lesson5(Implicit and wxplicit casting_BoxingUnboxing).dll
