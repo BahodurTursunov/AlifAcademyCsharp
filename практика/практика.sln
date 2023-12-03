@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lessons", "lessons", "{79C2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson4(стек и управляемая куча)", "lesson4(стек и управляемая куча)\lesson4(стек и управляемая куча).csproj", "{5308E74F-3676-4D32-A900-BBA9BB421996}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson5(Implicit and wxplicit casting_BoxingUnboxing)", "lesson5(Implicit and wxplicit casting_BoxingUnboxing)\lesson5(Implicit and wxplicit casting_BoxingUnboxing).csproj", "{4E56D23F-6C8A-41ED-B2C4-7B9099EF0F74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson5(Implicit and wxplicit casting_BoxingUnboxing)", "lesson5(Implicit and wxplicit casting_BoxingUnboxing)\lesson5(Implicit and wxplicit casting_BoxingUnboxing).csproj", "{4E56D23F-6C8A-41ED-B2C4-7B9099EF0F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson6(enum)", "lesson6(enum)\lesson6(enum).csproj", "{3E47AE60-ACBA-4581-A91A-81B30F04CE08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{4E56D23F-6C8A-41ED-B2C4-7B9099EF0F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E56D23F-6C8A-41ED-B2C4-7B9099EF0F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E56D23F-6C8A-41ED-B2C4-7B9099EF0F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E47AE60-ACBA-4581-A91A-81B30F04CE08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E47AE60-ACBA-4581-A91A-81B30F04CE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E47AE60-ACBA-4581-A91A-81B30F04CE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E47AE60-ACBA-4581-A91A-81B30F04CE08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,8 @@ Global
 		{39270D6F-6E0B-481D-8B2D-270608C24588} = {79C29C82-4DC8-4112-898C-8C4EDE8EBA2A}
 		{FA060989-FAB7-4D9F-9939-2C62613AD637} = {79C29C82-4DC8-4112-898C-8C4EDE8EBA2A}
 		{5308E74F-3676-4D32-A900-BBA9BB421996} = {79C29C82-4DC8-4112-898C-8C4EDE8EBA2A}
+		{4E56D23F-6C8A-41ED-B2C4-7B9099EF0F74} = {79C29C82-4DC8-4112-898C-8C4EDE8EBA2A}
+		{3E47AE60-ACBA-4581-A91A-81B30F04CE08} = {79C29C82-4DC8-4112-898C-8C4EDE8EBA2A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D19C3EE-989E-4DFD-AA7E-01167A2B7B06}
