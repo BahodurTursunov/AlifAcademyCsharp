@@ -1,14 +1,4 @@
-﻿
-enum MyEnum : my
-{
-    Hello = 4
-
-};
-enum my
-{
-    sadf = 3
-};
-class Program
+﻿class Program
 {
     static void Main(string[] args)
     {
