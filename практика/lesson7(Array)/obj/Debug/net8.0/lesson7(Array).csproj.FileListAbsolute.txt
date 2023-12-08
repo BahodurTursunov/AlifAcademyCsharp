@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\bin\Debug\net8.0\lesson7(Array).exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\bin\Debug\net8.0\lesson7(Array).deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\bin\Debug\net8.0\lesson7(Array).runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\bin\Debug\net8.0\lesson7(Array).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\bin\Debug\net8.0\lesson7(Array).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\lesson7(Array).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\lesson7(Array).AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\lesson7(Array).AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\lesson7(Array).csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\lesson7(Array).sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\lesson7(Array).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\refint\lesson7(Array).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\lesson7(Array).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\lesson7(Array).genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson7(Array)\obj\Debug\net8.0\ref\lesson7(Array).dll

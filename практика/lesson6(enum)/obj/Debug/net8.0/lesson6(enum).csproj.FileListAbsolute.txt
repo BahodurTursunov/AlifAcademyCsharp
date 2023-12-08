@@ -1,0 +1,5 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson6(enum)\obj\Debug\net8.0\lesson6(enum).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson6(enum)\obj\Debug\net8.0\lesson6(enum).AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson6(enum)\obj\Debug\net8.0\lesson6(enum).AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson6(enum)\obj\Debug\net8.0\lesson6(enum).csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson6(enum)\obj\Debug\net8.0\lesson6(enum).sourcelink.json
