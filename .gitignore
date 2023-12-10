@@ -3,3 +3,10 @@
 .pdb
 .cache
 .vsidx
+.cs
+.json
+.dll
+.exe
+.props
+.targets
+.cache
