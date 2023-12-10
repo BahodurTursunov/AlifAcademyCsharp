@@ -10,3 +10,8 @@
 .props
 .targets
 .cache
+.suo
+.vsidx
+.bin
+.suo
+.v2
