@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\bin\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\bin\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\bin\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\bin\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\bin\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\refint\lesson8(тернарный оператор и операторы сравнения).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\lesson8(тернарный оператор и операторы сравнения).genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson8(тернарный оператор и операторы сравнения)\obj\Debug\net8.0\ref\lesson8(тернарный оператор и операторы сравнения).dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "lesson8(тернарный оператор и операторы сравнения)/1.0.0": {
+        "runtime": {
+          "lesson8(тернарный оператор и операторы сравнения).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lesson8(тернарный оператор и операторы сравнения)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
