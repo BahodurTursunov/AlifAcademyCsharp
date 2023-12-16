@@ -17,6 +17,9 @@
 .v2
 AssemblyInfoInputs.cache
 AssemblyInfo.cs
-**/**/**/**/.bin/
-.suo
 .dtbcache.v2
+.suo
+практика/.vs/
+практика/v17/
+*.suo
+.AssemblyInfoInputs.cache
