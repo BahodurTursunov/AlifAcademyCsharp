@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\bin\Debug\net8.0\HW9-1.exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\bin\Debug\net8.0\HW9-1.deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\bin\Debug\net8.0\HW9-1.runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\bin\Debug\net8.0\HW9-1.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\bin\Debug\net8.0\HW9-1.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\HW9-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\HW9-1.AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\HW9-1.AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\HW9-1.csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\HW9-1.sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\HW9-1.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\refint\HW9-1.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\HW9-1.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\HW9-1.genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW9\HW9\HW9\obj\Debug\net8.0\ref\HW9-1.dll
