@@ -13,7 +13,6 @@ class Program
         int secondNumber = int.Parse(Console.ReadLine());
         int res = Sum(firstNumber, secondNumber);
         Console.WriteLine(res);
-
     }
 
     static int Sum(int firstNumber, int secondNumber)
