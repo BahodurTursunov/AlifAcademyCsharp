@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lesson8(тернарный оператор и операторы сравнения)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a783e923153477676bc464bdeb7fdefc3899d90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("lesson8(тернарный оператор и операторы сравнения)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lesson8(тернарный оператор и операторы сравнения)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
