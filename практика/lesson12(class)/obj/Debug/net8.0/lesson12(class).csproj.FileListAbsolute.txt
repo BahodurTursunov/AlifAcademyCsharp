@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\bin\Debug\net8.0\lesson12(class).exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\bin\Debug\net8.0\lesson12(class).deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\bin\Debug\net8.0\lesson12(class).runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\bin\Debug\net8.0\lesson12(class).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\bin\Debug\net8.0\lesson12(class).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\lesson12(class).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\lesson12(class).AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\lesson12(class).AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\lesson12(class).csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\lesson12(class).sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\lesson12(class).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\refint\lesson12(class).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\lesson12(class).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\lesson12(class).genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson12(class)\obj\Debug\net8.0\ref\lesson12(class).dll
