@@ -1,0 +1,4 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW14\HW14-2\obj\Debug\net8.0\HW14-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW14\HW14-2\obj\Debug\net8.0\HW14-2.AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW14\HW14-2\obj\Debug\net8.0\HW14-2.AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW14\HW14-2\obj\Debug\net8.0\HW14-2.csproj.CoreCompileInputs.cache

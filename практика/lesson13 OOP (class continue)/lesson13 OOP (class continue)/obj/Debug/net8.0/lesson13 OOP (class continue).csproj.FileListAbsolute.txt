@@ -1,0 +1,14 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\bin\Debug\net8.0\lesson13 OOP (class continue).exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\bin\Debug\net8.0\lesson13 OOP (class continue).deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\bin\Debug\net8.0\lesson13 OOP (class continue).runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\bin\Debug\net8.0\lesson13 OOP (class continue).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\bin\Debug\net8.0\lesson13 OOP (class continue).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\lesson13 OOP (class continue).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\lesson13 OOP (class continue).AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\lesson13 OOP (class continue).AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\lesson13 OOP (class continue).csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\lesson13 OOP (class continue).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\refint\lesson13 OOP (class continue).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\lesson13 OOP (class continue).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\lesson13 OOP (class continue).genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson13 OOP (class continue)\lesson13 OOP (class continue)\obj\Debug\net8.0\ref\lesson13 OOP (class continue).dll

@@ -1,0 +1,14 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\bin\Debug\net8.0\HW15-1.exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\bin\Debug\net8.0\HW15-1.deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\bin\Debug\net8.0\HW15-1.runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\bin\Debug\net8.0\HW15-1.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\bin\Debug\net8.0\HW15-1.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\HW15-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\HW15-1.AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\HW15-1.AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\HW15-1.csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\HW15-1.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\refint\HW15-1.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\HW15-1.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\HW15-1.genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\HW15\HW15-1\obj\Debug\net8.0\ref\HW15-1.dll

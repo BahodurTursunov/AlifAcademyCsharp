@@ -1,0 +1,14 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\lesson17.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\lesson17.AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\lesson17.AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\lesson17.csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\bin\Debug\net8.0\lesson17.exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\bin\Debug\net8.0\lesson17.deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\bin\Debug\net8.0\lesson17.runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\bin\Debug\net8.0\lesson17.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\bin\Debug\net8.0\lesson17.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\lesson17.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\refint\lesson17.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\lesson17.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\lesson17.genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson17\lesson17\obj\Debug\net8.0\ref\lesson17.dll
