@@ -1,0 +1,14 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\bin\Debug\net8.0\Practice HW12.2.exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\bin\Debug\net8.0\Practice HW12.2.deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\bin\Debug\net8.0\Practice HW12.2.runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\bin\Debug\net8.0\Practice HW12.2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\bin\Debug\net8.0\Practice HW12.2.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\Practice HW12.2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\Practice HW12.2.AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\Practice HW12.2.AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\Practice HW12.2.csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\Practice HW12.2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\refint\Practice HW12.2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\Practice HW12.2.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\Practice HW12.2.genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW12\Practice HW12.2\Practice HW12.2\obj\Debug\net8.0\ref\Practice HW12.2.dll
