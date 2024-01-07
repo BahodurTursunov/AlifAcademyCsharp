@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\bin\Debug\net8.0\lesson19(OOP inheritance polimorphism).exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\bin\Debug\net8.0\lesson19(OOP inheritance polimorphism).deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\bin\Debug\net8.0\lesson19(OOP inheritance polimorphism).runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\bin\Debug\net8.0\lesson19(OOP inheritance polimorphism).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\bin\Debug\net8.0\lesson19(OOP inheritance polimorphism).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\lesson19(OOP inheritance polimorphism).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\lesson19(OOP inheritance polimorphism).AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\lesson19(OOP inheritance polimorphism).AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\lesson19(OOP inheritance polimorphism).csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\lesson19(OOP inheritance polimorphism).sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\lesson19(OOP inheritance polimorphism).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\refint\lesson19(OOP inheritance polimorphism).dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\lesson19(OOP inheritance polimorphism).pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\lesson19(OOP inheritance polimorphism).genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\практика\lesson19(OOP inheritance polimorphism)\obj\Debug\net8.0\ref\lesson19(OOP inheritance polimorphism).dll

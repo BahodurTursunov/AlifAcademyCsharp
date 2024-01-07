@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "lesson19(OOP inheritance polimorphism)/1.0.0": {
+        "runtime": {
+          "lesson19(OOP inheritance polimorphism).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lesson19(OOP inheritance polimorphism)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

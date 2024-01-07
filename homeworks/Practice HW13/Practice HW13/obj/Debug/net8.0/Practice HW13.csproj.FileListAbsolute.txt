@@ -12,3 +12,4 @@ C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW13\Practice H
 C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW13\Practice HW13\obj\Debug\net8.0\Practice HW13.pdb
 C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW13\Practice HW13\obj\Debug\net8.0\Practice HW13.genruntimeconfig.cache
 C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW13\Practice HW13\obj\Debug\net8.0\ref\Practice HW13.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW13\Practice HW13\obj\Debug\net8.0\Practice HW13.sourcelink.json
