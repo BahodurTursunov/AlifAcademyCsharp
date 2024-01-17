@@ -1,0 +1,15 @@
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\bin\Debug\net8.0\HW20-2.exe
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\bin\Debug\net8.0\HW20-2.deps.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\bin\Debug\net8.0\HW20-2.runtimeconfig.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\bin\Debug\net8.0\HW20-2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\bin\Debug\net8.0\HW20-2.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\HW20-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\HW20-2.AssemblyInfoInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\HW20-2.AssemblyInfo.cs
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\HW20-2.csproj.CoreCompileInputs.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\HW20-2.sourcelink.json
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\HW20-2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\refint\HW20-2.dll
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\HW20-2.pdb
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\HW20-2.genruntimeconfig.cache
+C:\Users\tursu\source\repos\AlifAcademyCsharp\homeworks\Practice HW20\HW20-2\HW20-2\obj\Debug\net8.0\ref\HW20-2.dll
