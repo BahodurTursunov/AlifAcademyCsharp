@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tursu\\source\\repos\\AlifAcademyCsharp\\homeworks\\HW\\HW7-1\\HW7-1.csproj",
+      "projectUniqueName": "C:\\Users\\tursu\\source\\repos\\AlifAcademyCsharp\\homeworks\\Practice HW7\\HW7-1\\HW7-1.csproj",
       "projectName": "HW7-1",
-      "projectPath": "C:\\Users\\tursu\\source\\repos\\AlifAcademyCsharp\\homeworks\\HW\\HW7-1\\HW7-1.csproj",
+      "projectPath": "C:\\Users\\tursu\\source\\repos\\AlifAcademyCsharp\\homeworks\\Practice HW7\\HW7-1\\HW7-1.csproj",
       "packagesPath": "C:\\Users\\tursu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tursu\\source\\repos\\AlifAcademyCsharp\\homeworks\\HW\\HW7-1\\obj\\",
+      "outputPath": "C:\\Users\\tursu\\source\\repos\\AlifAcademyCsharp\\homeworks\\Practice HW7\\HW7-1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tursu\\AppData\\Roaming\\NuGet\\NuGet.Config",
