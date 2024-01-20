@@ -4,10 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Calculator calc = new();
-            Console.WriteLine(calc.Add(2, 5));
-            Console.WriteLine(calc.Multiply(10, 2));
+            var resultAdd = Calculator.Add(5, 6);
+            Console.WriteLine(resultAdd);
 
+            var resultMultiplly = Calculator.Multiply(5, 6);
+            Console.WriteLine(resultMultiplly);
         }
     }
 }

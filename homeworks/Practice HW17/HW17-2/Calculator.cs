@@ -1,15 +1,15 @@
 ﻿namespace HW17_2
 {
-    internal class Calculator : IMath
+    public class Calculator : IMath
     {
-        public int Add(int firstNum, int secondNum)
+        public static int Add(int a, int b)
         {
-            return firstNum + secondNum;
-        }
-        public int Multiply(int firstNum, int secondNum)
-        {
-            return firstNum * secondNum;
+            return a + b;
         }
 
+        public static int Multiply(int a, int b)
+        {
+            return (a * b);
+        }
     }
 }

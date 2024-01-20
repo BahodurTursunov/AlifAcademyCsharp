@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice HW17", "Practice HW17\Practice HW17.csproj", "{39FF0A2C-0BDC-407B-BF8F-F22B75C56AB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice HW17", "Practice HW17\Practice HW17.csproj", "{39FF0A2C-0BDC-407B-BF8F-F22B75C56AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW17-2", "HW17-2\HW17-2.csproj", "{8D3CF5F1-8637-4FC0-9554-2AF9B78704C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW17-2", "HW17-2\HW17-2.csproj", "{8D3CF5F1-8637-4FC0-9554-2AF9B78704C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "erm", "erm\erm.csproj", "{2334424D-AC78-49EB-AB70-3DC3482B1573}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8D3CF5F1-8637-4FC0-9554-2AF9B78704C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D3CF5F1-8637-4FC0-9554-2AF9B78704C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D3CF5F1-8637-4FC0-9554-2AF9B78704C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2334424D-AC78-49EB-AB70-3DC3482B1573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2334424D-AC78-49EB-AB70-3DC3482B1573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2334424D-AC78-49EB-AB70-3DC3482B1573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2334424D-AC78-49EB-AB70-3DC3482B1573}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
