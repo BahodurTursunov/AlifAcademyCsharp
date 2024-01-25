@@ -4,15 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Book myBook = new()
-            {
-                Title = "Iron man",
-                Author = "Junior"
-            };
+            Book myBook = new("Tom and Jerry", "Karl Davidson");
 
-            var (bookTitle, bookAuthor) = myBook;
+            (string title, string author) = myBook;
 
-            Console.WriteLine($"Title: {bookTitle} Author: {bookAuthor}");
+            Console.WriteLine($"Title: {title}\nAuthor: {author}");
         }
     }
 
@@ -21,10 +17,16 @@
         public string Title { get; set; }
         public string Author { get; set; }
 
-        public void Deconstruc(out string title, out string author)
+        public Book(string title, string author)
         {
-            title = Title;
-            author = Author;
+            Title = title;
+            Author = author;
+        }
+
+        public void Deconstruct(out string bookTitle, out string bookAuthor)
+        {
+            bookTitle = Title;
+            bookAuthor = Author;
         }
     }
 }

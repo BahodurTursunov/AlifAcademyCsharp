@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Practice HW20")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cc66b6a802c1e55ea23a90f126ee62279129c1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Practice HW20")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Practice HW20")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
