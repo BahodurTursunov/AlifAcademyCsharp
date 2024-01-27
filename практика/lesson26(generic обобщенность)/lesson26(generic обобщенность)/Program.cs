@@ -4,8 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Box<int> intBox = new(123);
-            Box<string> stringBox = new(""); // Здесь мы задавать тип стринг не можем потому что string это класс, а у нас стоит ограничение 
+           Box<MyStruct> boxStruct = new(new MyStruct());  
+        }
+    }
+
+    struct MyStruct
+    {
+        public int MyInt;
+        public MyStruct()
+        {
+            MyInt = 100;
         }
     }
 
