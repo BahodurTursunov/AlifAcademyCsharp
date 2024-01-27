@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
+            Person[] persons = 
+                [
+                    new("Bob", 23),
+                    new("Ale", 32),
+                    new("Vasek", 21),
+                    new("Abdu", 31),
+                    new("John", 40)
+                ];
 
+            Person person = MaxFinder.FindMax(persons);
+            Console.WriteLine(person);
 
         }
     }
@@ -31,7 +41,7 @@
 
             T maxEl = array[0];
 
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 1; i < array.Length; i++)
             {
                 if (array[i].CompareTo(maxEl) > 0)
                 {
