@@ -4,35 +4,41 @@
     {
         static void Main(string[] args)
         {
-            
-           
+
+
         }
     }
-
-    public abstract class Fruit { }
-
-    //public class Fruit { }
-    public sealed class Apple : Fruit { }
-
-    public sealed class Box<T> where T: Fruit
+    public sealed class Person : IComparable<Person>
     {
-        private T _item;
+        public string Name { get; }
+        public int Age { get; }
 
-        public Box(T initialItem)
+        public Person(string name, int age)
         {
-            _item = initialItem;
+            Name = name;
+            Age = age;
         }
 
-        public T GetItem()
-        {
-            Console.WriteLine("Получение: " + _item);
-            return _item;
-        }
+        public int CompareTo(Person? other) => Age.CompareTo(other.Age);
+    }
 
-        public void SetItem(T item)
+    public static class MaxFinder
+    {
+        public static T FindMax<T>(T[] array) where T : IComparable<T>
         {
-            Console.WriteLine("Установка: " + _item);
-            _item = item;
+            if (array is not { Length: > 0 })
+                throw new ArgumentOutOfRangeException();
+
+            T maxEl = array[0];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i].CompareTo(maxEl) > 0)
+                {
+                    maxEl = array[i];
+                }
+            }
+            return maxEl;
         }
     }
 }
