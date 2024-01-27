@@ -4,18 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Box<string> box = new("Apple");
-            string item = box.GetItem();
-            Console.WriteLine(item);
-
-            Box<int> boxNumber = new(123);
-            boxNumber.SetItem(32);
-            int number = boxNumber.GetItem();
-            Console.WriteLine(number);
+            Box<int> intBox = new(123);
+            Box<string> stringBox = new(""); // Здесь мы задавать тип стринг не можем потому что string это класс, а у нас стоит ограничение 
         }
     }
 
-    public sealed class Box<T>
+    public sealed class Box<T> where T: struct 
     {
         private T _item;
 
