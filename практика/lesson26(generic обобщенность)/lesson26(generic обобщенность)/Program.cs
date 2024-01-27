@@ -4,26 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Box<object> boxStruct = new("34");  
             
            
         }
     }
 
-    class MyClass
-    {
-        private MyClass() { }
+    public abstract class Fruit { }
 
-    struct MyStruct
-    {
-        public int MyInt;
-        public MyStruct()
-        {
-            MyInt = 100;
-        }
-    }
+    //public class Fruit { }
+    public sealed class Apple : Fruit { }
 
-    public sealed class Box<T> where T: class
+    public sealed class Box<T> where T: Fruit
     {
         private T _item;
 
