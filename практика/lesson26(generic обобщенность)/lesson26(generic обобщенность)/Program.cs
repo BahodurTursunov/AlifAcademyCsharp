@@ -4,9 +4,15 @@
     {
         static void Main(string[] args)
         {
-           Box<MyStruct> boxStruct = new(new MyStruct());  
+            Box<object> boxStruct = new("34");  
+            
+           
         }
     }
+
+    class MyClass
+    {
+        private MyClass() { }
 
     struct MyStruct
     {
@@ -17,7 +23,7 @@
         }
     }
 
-    public sealed class Box<T> where T: struct 
+    public sealed class Box<T> where T: class
     {
         private T _item;
 
