@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lesson19(OOP inheritance polimorphism)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d236af5db7e7133f83262755f278014e7e1c5d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bd17a08e6b5aaac215bee8b35440c9a96d6c381")]
 [assembly: System.Reflection.AssemblyProductAttribute("lesson19(OOP inheritance polimorphism)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lesson19(OOP inheritance polimorphism)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
