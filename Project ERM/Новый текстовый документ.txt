@@ -1,0 +1,125 @@
+*********************************************************************
+** Visual Studio 2022 Developer PowerShell v17.8.3
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM> dotnet new classlib -o Erm.DataAccess
+Шаблон "Библиотека классов" успешно создан.
+
+Идет обработка действий после создания...
+  Определение проектов для восстановления...
+  Восстановлен C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\Erm.DataAccess\Erm.DataAccess.csproj (за 1,11 sec).
+Восстановление выполнено.
+
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM> mkdir src
+
+
+    Каталог: C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM
+
+----                 -------------         ------ ----
+d-----        17.02.2024     17:58                src
+
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM> cd src
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\src> ls
+
+
+    Каталог: C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\src
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        17.02.2024     17:56                Erm.DataAccess
+
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\src> dotnet new classlib -o Erm.BusinessLayer
+Шаблон "Библиотека классов" успешно создан.
+
+Идет обработка действий после создания...
+  Определение проектов для восстановления...
+  Восстановлен C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\src\Erm.BusinessLayer\Erm.BusinessLayer.csproj (за 371 ms).
+Восстановление выполнено.
+
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\src> dotnet new console -o Erm.PresentationLayer.Console
+Шаблон "Консольное приложение" успешно создан.
+
+Идет обработка действий после создания...
+  Восстановлен C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\src\Erm.PresentationLayer.Console\Erm.PresentationLayer.Console.csproj (за 264 ms).
+Восстановление выполнено.
+
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\src> cd ..
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM> ls
+
+
+    Каталог: C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        17.02.2024     18:00                src
+-a----        17.02.2024     17:41           5140 Architecture.drawio
+-a----        17.02.2024     17:17           1139 Project ERM.sln
+
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM> mdkir tests
+mdkir : Имя "mdkir" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность п
+ути, после чего повторите попытку.
++ mdkir tests
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (mdkir:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM> mkdir tests
+
+
+    Каталог: C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM
+
+----                 -------------         ------ ----
+d-----        17.02.2024     18:01                tests
+
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM> cd .\tests\
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests> dotnet new xunit -o Erm.UnitTests
+Шаблон "xUnit Test Project" успешно создан.
+
+Идет обработка действий после создания...
+Восстановление C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests\Erm.UnitTests\Erm.UnitTests.csproj:
+  Восстановлен C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests\Erm.UnitTests\Erm.UnitTests.csproj (за 1,84 min).
+Восстановление выполнено.
+
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests> ^C
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests> touch he
+touch : Имя "touch" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность п
+ути, после чего повторите попытку.
++ touch he
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (touch:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests> type nul > your_file.txt
+type : Не удается найти путь "C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests\nul", так как он не существует.
++ type nul > your_file.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\tursu\...t ERM\tests\nul:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests> echo.> your_file.txt
+echo.> : Имя "echo.>" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность
+ пути, после чего повторите попытку.
++ echo.> your_file.txt
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests> nano readme.md
+nano : Имя "nano" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пут
+и, после чего повторите попытку.
+строка:1 знак:1
++ nano readme.md
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (nano:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\tursu\source\repos\AlifAcademyCsharp\Project ERM\tests>
