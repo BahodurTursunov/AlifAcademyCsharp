@@ -5,7 +5,9 @@
         static void Main(string[] args)
         {
             var myArray = new MyArray(5);
+
             myArray[0] = 1;
+
             Console.WriteLine(myArray[0]);
 
             myArray[1, 2] = 20;
