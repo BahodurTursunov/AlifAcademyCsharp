@@ -4,13 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        string riskName = Console.ReadLine();
-        string description = Console.ReadLine();
+        const string _exit = "exit";
+        string cmd = Console.ReadLine();
 
-        RiskProfileInfo riskProfileInfo = new()
+        while (cmd != _exit)
         {
-            Name = riskName,
-            Description = description
-        };
+            cmd = Console.ReadLine();
+        }
     }
 }
