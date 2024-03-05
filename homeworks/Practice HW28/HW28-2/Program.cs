@@ -24,7 +24,7 @@
         {
             foreach (var name in namesList)
             {
-                Console.WriteLine($"- {name}");
+                Console.WriteLine($"-> {name}");
             }
         }
     }
