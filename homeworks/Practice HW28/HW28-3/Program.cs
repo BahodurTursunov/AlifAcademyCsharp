@@ -22,6 +22,7 @@
             DisplayValues(_dictionary);
 
             Console.WriteLine();
+
             // метод для поиска значения по ключу
 
             string _searchKey = "Tom";
