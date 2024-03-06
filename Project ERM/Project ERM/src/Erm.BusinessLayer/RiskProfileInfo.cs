@@ -1,6 +1,5 @@
 ﻿namespace Erm.BusinessLayer;
-
-public readonly record struct RiskProfileInfo(
+public readonly record struct RiskProfileInfo( // здесь не нужно писать конструктор для обращения в PresentationLayerConsole потому что компилятор автоматически создает конструктор
     string Name,
     string Description,
     string BusinessProcess,

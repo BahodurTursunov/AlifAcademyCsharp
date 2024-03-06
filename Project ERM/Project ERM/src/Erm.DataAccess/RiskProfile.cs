@@ -1,4 +1,6 @@
-﻿using Project_ERM.src.Erm.DataAccess;
+﻿using Erm.BusinessLayer;
+
+using Project_ERM.src.Erm.DataAccess;
 
 namespace Erm.DataAccess;
 
@@ -23,4 +25,6 @@ public sealed class RiskProfile
             ? throw new ArgumentOutOfRangeException(nameof(value)) : value;
     }
     public string? PotentialSolution { get; set; } // потенциальное решение риска
+
+    // TODO: create construct for riskprofileinfo
 }
