@@ -1,7 +1,6 @@
-﻿using System.Threading.Channels;
+﻿using Erm.BusinessLayer;
 
-using Erm.BusinessLayer;
-using Erm.DataAccess;
+using Project_ERM.Erm.BusinessLayer.Services;
 
 class Program
 {
@@ -13,40 +12,52 @@ class Program
 
         while (!cmd.Equals(CommandHelper.ExitCommand))
         {
-            Console.ForegroundColor = ConsoleColor.Gray; // Reset console foreground color to default.
-
-            Console.Write(CommandHelper.InputSumbol);
-            cmd = Console.ReadLine();
-
-            switch (cmd)
+            try
             {
-                case CommandHelper.CreateRiskProfileCommand:
-                    string rpName = Console.ReadLine(); // required
+                Console.ForegroundColor = ConsoleColor.Gray; // Reset console foreground color to default.
 
-                    string rpDescription = Console.ReadLine();
+                Console.Write(CommandHelper.InputSymbol);
 
-                    string rpBusinessProcess = Console.ReadLine();
+                switch (cmd)
+                {
+                    case CommandHelper.CreateRiskProfileCommand:
+                        Console.WriteLine("Введите имя риска: ");
+                        string rpName = Console.ReadLine();
 
-                    int rpOccurrenceProbability = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Введите описание риска: ");
+                        string rpDescription = Console.ReadLine();
 
-                    int rpPotentialBusinessImpact = int.Parse(Console.ReadLine()); //
+                        Console.WriteLine("Введите название бизнесс процесса и область применения: ");
+                        string rpBusinessProcess = Console.ReadLine();
 
-                    RiskProfile riskProfileInfo = new(rpName, rpDescription, rpBusinessProcess, rpOccurrenceProbability, rpPotentialBusinessImpact); // придумать инструмент валидации
+                        Console.WriteLine("Введите возникновение риска по шкале (1 - 10: ");
+                        bool rpOccurrenceProbability = int.TryParse(Console.ReadLine(), out int _rpOccurrenceProbability);
 
-                    riskProfileService.Create(riskProfileInfo);
+                        Console.WriteLine("Введите потенциальное влияние на бизнес по шкале (1 - 10): "); 
 
-                    Console.WriteLine(); break;
+                        bool rpPotentialBusinessImpact = int.TryParse(Console.ReadLine(), out int _rpPotentialBusinessImpact);
 
-                case CommandHelper.HelpCommand:
-                    Console.WriteLine(CommandHelper.InputSumbol + CommandHelper.CreateRiskProfileCommand + " -> " + CommandHelper.CreateRiskProfileDescription); break;
+                        RiskProfileInfo riskProfileInfo = new(rpName, rpDescription, rpBusinessProcess, _rpOccurrenceProbability, _rpPotentialBusinessImpact);
 
-                case CommandHelper.ExitCommand:
-                    Console.WriteLine("Successfully exit"); break;
+                        riskProfileService.Create(riskProfileInfo);
+                        break;
 
-                default:
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine(CommandHelper.UnknownCommandMessage);
-                    break;
+                    case CommandHelper.HelpCommand:
+                        Console.WriteLine(CommandHelper.InputSymbol + CommandHelper.CreateRiskProfileCommand + " -> " + CommandHelper.CreateRiskProfileDescription); break;
+
+                    case CommandHelper.ExitCommand:
+                        Console.WriteLine("Successfully exit"); break;
+
+                    default:
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine(CommandHelper.UnknownCommandMessage);
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(CommandHelper.InputSymbol + ex.Message);
             }
         }
     }
@@ -54,7 +65,7 @@ class Program
 
 file static class CommandHelper
 {
-    public const string InputSumbol = "> ";
+    public const string InputSymbol = "> ";
 
     public const string ExitCommand = "exit";
 

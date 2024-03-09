@@ -1,15 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Project_ERM.src.Erm.DataAccess
+﻿namespace Project_ERM.Erm.DataAccess
 {
     public class BusinessProcess
     {
         public required string Name { get; set; } // название бизнес процесса
-        public required string Domain { get; set; } // область /*применения*/
+        public required string Domain { get; set; } // область применения
+
+        //public BusinessProcess(string name, string domain)
+        //{
+        //    Name = name;
+        //    Domain = domain;
+        //}
+
+        //public BusinessProcess()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 
 }
