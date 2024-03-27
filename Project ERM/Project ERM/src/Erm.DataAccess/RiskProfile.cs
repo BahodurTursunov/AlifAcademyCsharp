@@ -23,9 +23,14 @@ public sealed class RiskProfile()
     }
     public string? PotentialSolution { get; set; } // потенциальное решение риска
 
-    //public RiskProfile(RiskProfileInfo riskProfileInfo) : this(riskProfileInfo.Name, riskProfileInfo.Description, riskProfileInfo.BusinessProcess, riskProfileInfo.OccurrenceProbability, riskProfileInfo.PotentialBusinessImpact)
+    //public void ShowInfo(string riskName, string description, BusinessProcess businessProcess, int occurentProbability, int potentialBusinessImpact)
     //{
-    //    riskProfileInfo.Name = RiskName;
-    //}
+    //    riskName = RiskName;
+    //    description = Description;
+    //    businessProcess = BusinessProcess;
+    //    occurentProbability = OccurrenceProbability;
+    //    potentialBusinessImpact = PotentialBusinessImpact;
 
+    //    Console.WriteLine($"{riskName},{description},{businessProcess},{occurentProbability},{potentialBusinessImpact}");
+    //}
 }
