@@ -1,10 +1,12 @@
-﻿using AutoMapper;
+﻿using System.Diagnostics;
 
+using AutoMapper;
 using Erm.BusinessLayer;
 using Erm.BusinessLayer.Validators;
 using Erm.DataAccess;
 
 using FluentValidation;
+using FluentValidation.Results;
 
 using Project_ERM.Erm.DataAccess;
 
@@ -26,10 +28,30 @@ public sealed class RiskProfileService : IRiskProfileService
     public void Create(RiskProfileInfo profileInfo)
     {
         _validationRules.ValidateAndThrow(profileInfo);
-
-        RiskProfile riskProfile = _mapper.Map<RiskProfile>(profileInfo);
-
+        RiskProfile riskProfile= _mapper.Map<RiskProfile>(profileInfo);
         _repository.Create(riskProfile);
+
+
+        /*//RiskProfileInfoValidator validationRules = new();
+        //ValidationResult result = validationRules.Validate(profileInfo);
+
+        //if (!result.IsValid)
+        //{
+        //    foreach (ValidationFailure failure in result.Errors)
+        //    {
+        //        Debug.WriteLine(failure.ErrorMessage);
+        //    }
+        //}
+        //_validationRules.ValidateAndThrow(profileInfo);
+        //RiskProfile riskProfile = _mapper.Map<RiskProfile>(profileInfo);
+        //_repository.Create(riskProfile);*/
+    }
+
+    public IEnumerable<RiskProfileInfo> Query(string query)
+    {
+        ArgumentException.ThrowIfNullOrEmpty(query);
+        IEnumerable<RiskProfile> riskProfiles = _repository.Query(query);
+        return _mapper.Map<IEnumerable<RiskProfileInfo>>(riskProfiles);
     }
 }
 

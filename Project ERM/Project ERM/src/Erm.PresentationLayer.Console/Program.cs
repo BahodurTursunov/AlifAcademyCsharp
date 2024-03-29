@@ -31,7 +31,7 @@ class Program
                         Console.WriteLine("Введите название бизнесс процесса и область применения: ");
                         string rpBusinessProcess = Console.ReadLine();
 
-                        Console.WriteLine("Введите возникновение риска по шкале (1 - 10: ");
+                        Console.WriteLine("Введите возникновение риска по шкале (1 - 10): ");
                         bool rpOccurrenceProbability = int.TryParse(Console.ReadLine(), out int _rpOccurrenceProbability);
 
                         Console.WriteLine("Введите потенциальное влияние на бизнес по шкале (1 - 10): "); 
@@ -43,6 +43,14 @@ class Program
                         riskProfileService.Create(riskProfileInfo);
                         break;
 
+                    case CommandHelper.QueryRiskProfileCommand:
+                        string query = Console.ReadLine();
+                        IEnumerable<RiskProfileInfo> profileInfos = riskProfileService.Query(query);
+                        foreach (var item in profileInfos)
+                        {
+                            Console.WriteLine(item);
+                        } 
+                        break;
                     case CommandHelper.HelpCommand:
                         Console.WriteLine(CommandHelper.InputSymbol + CommandHelper.CreateRiskProfileCommand + " -> " + CommandHelper.CreateRiskProfileDescription); break;
 
@@ -73,6 +81,8 @@ file static class CommandHelper
     public const string HelpCommand = "help";
 
     public const string CreateRiskProfileCommand = "create_profile";
+
+    public const string QueryRiskProfileCommand = "search_profile";
 
     public const string CreateRiskProfileDescription = "Creates Risk Profile";
 
