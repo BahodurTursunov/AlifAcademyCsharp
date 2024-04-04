@@ -50,6 +50,7 @@ class Program
                         {
                             Console.WriteLine(item);
                         } 
+                        
                         break;
                     case CommandHelper.HelpCommand:
                         Console.WriteLine(CommandHelper.InputSymbol + CommandHelper.CreateRiskProfileCommand + " -> " + CommandHelper.CreateRiskProfileDescription); break;

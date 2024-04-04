@@ -9,7 +9,9 @@ namespace Erm.DataAccess;
 public sealed class RiskProfileRepositoryProxy : IRiskProfileRepository
 {
     private readonly RiskProfileRepository _originalRepository;
+
     private readonly IDatabase _redisDb;
+
     private const string RedisHost = "127.0.0.1:6379";
 
     public RiskProfileRepositoryProxy(RiskProfileRepository originalRepository)
@@ -33,7 +35,7 @@ public sealed class RiskProfileRepositoryProxy : IRiskProfileRepository
             return _originalRepository.Get(name);
 
         string redisProfileJsonStr = redisValue.ToString();
-        RiskProfile profile = JsonSerializer.Deserialize<RiskProfile>(redisProfileJsonStr) ?? throw new InvalidOperationException;
+        RiskProfile profile = JsonSerializer.Deserialize<RiskProfile>(redisProfileJsonStr) ?? throw new InvalidOperationException();
         return profile;
     }
    

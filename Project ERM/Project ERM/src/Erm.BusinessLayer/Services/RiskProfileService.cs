@@ -4,7 +4,6 @@ using AutoMapper;
 using Erm.BusinessLayer;
 using Erm.BusinessLayer.Validators;
 using Erm.DataAccess;
-
 using FluentValidation;
 using FluentValidation.Results;
 
@@ -30,7 +29,6 @@ public sealed class RiskProfileService : IRiskProfileService
         _validationRules.ValidateAndThrow(profileInfo);
         RiskProfile riskProfile= _mapper.Map<RiskProfile>(profileInfo);
         _repository.Create(riskProfile);
-
 
         /*//RiskProfileInfoValidator validationRules = new();
         //ValidationResult result = validationRules.Validate(profileInfo);

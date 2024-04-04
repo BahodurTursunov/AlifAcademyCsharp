@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Project_ERM.src.Erm.BusinessLayer.Services
 {
-    internal class Class1
+    internal class AlertService
     {
+        //TODO: Alert
     }
 }
