@@ -2,6 +2,7 @@
 {
     public class BusinessProcess
     {
+        public int Id { get; set; }
         public required string Name { get; set; } // название бизнес процесса
         public required string Domain { get; set; } // область применения
 
