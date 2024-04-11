@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 
 using Project_ERM.Erm.DataAccess;
+using Project_ERM.Erm.DataAccess.Repositories;
 
 using StackExchange.Redis;
 

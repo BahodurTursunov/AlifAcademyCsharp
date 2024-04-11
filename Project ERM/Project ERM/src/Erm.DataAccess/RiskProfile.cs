@@ -11,8 +11,6 @@ public sealed class RiskProfile()
 
     public int BusinessProcessId { get; set; }
 
-
-
     public required string RiskName { get; set; } // название риска
     public required string? Description { get; set; } // описание/характеристика риска
     public required BusinessProcess BusinessProcess { get; set; } // связанные бизнес-процессы, или подразделения
@@ -29,15 +27,4 @@ public sealed class RiskProfile()
             ? throw new ArgumentOutOfRangeException(nameof(value)) : value;
     }
     public string? PotentialSolution { get; set; } // потенциальное решение риска
-
-    //public void ShowInfo(string riskName, string description, BusinessProcess businessProcess, int occurentProbability, int potentialBusinessImpact)
-    //{
-    //    riskName = RiskName;
-    //    description = Description;
-    //    businessProcess = BusinessProcess;
-    //    occurentProbability = OccurrenceProbability;
-    //    potentialBusinessImpact = PotentialBusinessImpact;
-
-    //    Console.WriteLine($"{riskName},{description},{businessProcess},{occurentProbability},{potentialBusinessImpact}");
-    //}
 }

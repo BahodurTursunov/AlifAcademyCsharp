@@ -1,5 +1,5 @@
 ﻿using Erm.BusinessLayer;
-
+using Project_ERM.Erm.BusinessLayer;
 using Project_ERM.Erm.BusinessLayer.Services;
 using Project_ERM.Erm.DataAccess;
 
@@ -9,12 +9,14 @@ class Program
     {
         IRiskProfileService riskProfileService = new RiskProfileService();
 
-        string? cmd = Console.ReadLine();
+        string cmd = "";
 
         while (!cmd.Equals(CommandHelper.ExitCommand))
         {
             try
             {
+                cmd = Console.ReadLine();
+
                 Console.ForegroundColor = ConsoleColor.Gray; // Reset console foreground color to default.
 
                 Console.Write(CommandHelper.InputSymbol);
@@ -23,28 +25,28 @@ class Program
                 {
                     case CommandHelper.CreateRiskProfileCommand:
                         Console.WriteLine("Введите имя риска: ");
-                        string rpName = Console.ReadLine();
+                        string riskName = Console.ReadLine();
 
                         Console.WriteLine("Введите описание риска: ");
-                        string rpDescription = Console.ReadLine();
+                        string riskDescription = Console.ReadLine();
 
                         Console.WriteLine("Введите название бизнесс процесса и область применения: ");
-                        string rpBusinessProcess = Console.ReadLine();
+                        string riskBusinessProcess = Console.ReadLine();
 
                         Console.WriteLine("Введите возникновение риска по шкале (1 - 10): ");
-                        bool rpOccurrenceProbability = int.TryParse(Console.ReadLine(), out int _rpOccurrenceProbability);
+                        bool riskOccurrenceProbability = int.TryParse(Console.ReadLine(), out int OccurrenceProbability);
 
                         Console.WriteLine("Введите потенциальное влияние на бизнес по шкале (1 - 10): "); 
 
-                        bool rpPotentialBusinessImpact = int.TryParse(Console.ReadLine(), out int _rpPotentialBusinessImpact);
+                        bool riskPotentialBusinessImpact = int.TryParse(Console.ReadLine(), out int PotentialBusinessImpact);
 
-                        RiskProfileInfo riskProfileInfo = new(rpName, rpDescription, rpBusinessProcess, _rpOccurrenceProbability, _rpPotentialBusinessImpact);
+                        RiskProfileInfo riskProfileInfo = new(riskName, riskDescription, riskBusinessProcess, OccurrenceProbability, PotentialBusinessImpact);
 
                         riskProfileService.Create(riskProfileInfo);
                         break;
 
                     case CommandHelper.QueryRiskProfileCommand:
-                        string query = Console.ReadLine();
+                        string? query = Console.ReadLine();
                         IEnumerable<RiskProfileInfo> profileInfos = riskProfileService.Query(query);
                         foreach (var item in profileInfos)
                         {

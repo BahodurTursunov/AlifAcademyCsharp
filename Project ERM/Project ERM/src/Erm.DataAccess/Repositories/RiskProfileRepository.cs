@@ -1,21 +1,17 @@
-﻿using Project_ERM.Erm.DataAccess;
+﻿using Erm.DataAccess;
 
-namespace Erm.DataAccess;
+namespace Project_ERM.Erm.DataAccess.Repositories;
 
 public sealed class RiskProfileRepository : IRiskProfileRepository
 {
-    private static readonly List<RiskProfile> _db;
-
-    static RiskProfileRepository() => _db = new(capacity: 100);
-
-    public void Create(RiskProfile entity) => _db.Add(entity);
-
-    public IEnumerable<RiskProfile> Query(string query)
+    private readonly ErmDbContext.ErmDbContext _db = new();
+    public void Create(RiskProfile entity)
     {
-        return _db.Where(x => x.RiskName.Contains(query) || x.Description.Contains(query));
-
+        _db.RiskProfiles.Add(entity);
+        _db.SaveChanges();
+    }
+    public IEnumerable<RiskProfile> Query(string query) => _db.RiskProfiles.Where(x => x.RiskName.Contains(query) || x.Description.Contains(query)).ToArray();
         /*// метод where делает то что написано ниже
-
         //foreach (RiskProfile riskProfile in _db)
         //{
         //    if(riskProfile.RiskName.Contains(query) || riskProfile.Description.Contains(query))
@@ -23,16 +19,24 @@ public sealed class RiskProfileRepository : IRiskProfileRepository
         //        yield return riskProfile;
         //    }
         //}*/
-    }
 
     public void Delete(string name)
     {
-
+        _db.RiskProfiles.Where(x => x.RiskName.Equals(name)).ExecuteDelete();
+        _db.SaveChanges();
     }
-    public RiskProfile Get(string name) => _db.Single(x => x.RiskName.Equals(name));
-
+    public RiskProfile Get(string name) => _db.RiskProfiles.Single(x => x.RiskName.Equals(name));
     public void Update(string name, RiskProfile riskProfile)
     {
-        throw new NotImplementedException();
+        RiskProfile profileToUpdate = _db.RiskProfiles.Single(x => x.RiskName.Equals(name));
+        
+        profileToUpdate.RiskName = riskProfile.RiskName;
+        profileToUpdate.Description = riskProfile.Description;
+        profileToUpdate.PotentialBusinessImpact = riskProfile.PotentialBusinessImpact;
+        profileToUpdate.PotentialSolution = riskProfile.PotentialSolution;
+        profileToUpdate.OccurrenceProbability = riskProfile.OccurrenceProbability;
+        
+        _db.SaveChanges();
     }
 }
+// еще есть метод asnotracking перед where

@@ -1,4 +1,6 @@
-﻿namespace Erm.BusinessLayer;
+﻿using Erm.BusinessLayer;
+
+namespace Project_ERM.Erm.BusinessLayer.Services;
 
 public interface IRiskProfileService
 {

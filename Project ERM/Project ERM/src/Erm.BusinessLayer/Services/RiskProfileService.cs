@@ -8,6 +8,7 @@ using FluentValidation;
 using FluentValidation.Results;
 
 using Project_ERM.Erm.DataAccess;
+using Project_ERM.Erm.DataAccess.Repositories;
 
 namespace Project_ERM.Erm.BusinessLayer.Services;
 public sealed class RiskProfileService : IRiskProfileService

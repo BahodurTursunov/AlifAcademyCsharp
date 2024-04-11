@@ -1,5 +1,7 @@
 ﻿using FluentValidation;
 
+using Project_ERM.Erm.BusinessLayer;
+
 namespace Erm.BusinessLayer.Validators;
 
 internal sealed class RiskProfileInfoValidator : AbstractValidator<RiskProfileInfo>
