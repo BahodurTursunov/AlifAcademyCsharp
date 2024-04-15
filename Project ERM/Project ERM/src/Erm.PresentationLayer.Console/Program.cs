@@ -1,15 +1,12 @@
-﻿using Erm.BusinessLayer;
-using Project_ERM.Erm.BusinessLayer;
+﻿using Project_ERM.Erm.BusinessLayer;
 using Project_ERM.Erm.BusinessLayer.Services;
-using Project_ERM.Erm.DataAccess;
-
 class Program
 {
     static void Main(string[] args)
     {
         IRiskProfileService riskProfileService = new RiskProfileService();
-
-        string cmd = "";
+        
+        string? cmd = string.Empty; 
 
         while (!cmd.Equals(CommandHelper.ExitCommand))
         {
@@ -25,22 +22,36 @@ class Program
                 {
                     case CommandHelper.CreateRiskProfileCommand:
                         Console.WriteLine("Введите имя риска: ");
-                        string riskName = Console.ReadLine();
+                        string? riskName = Console.ReadLine();
 
                         Console.WriteLine("Введите описание риска: ");
-                        string riskDescription = Console.ReadLine();
+                        string? riskDescription = Console.ReadLine();
 
                         Console.WriteLine("Введите название бизнесс процесса и область применения: ");
-                        string riskBusinessProcess = Console.ReadLine();
+                        string? riskBusinessProcess = Console.ReadLine();
 
                         Console.WriteLine("Введите возникновение риска по шкале (1 - 10): ");
-                        bool riskOccurrenceProbability = int.TryParse(Console.ReadLine(), out int OccurrenceProbability);
+                        int riskOccurrenceProbability;
+                        while (!int.TryParse(Console.ReadLine(), out riskOccurrenceProbability))
+                        {
+                            Console.WriteLine("Неправильно введенные данные, пожалуйста ведите число от 0 до 10");
+                        }
 
-                        Console.WriteLine("Введите потенциальное влияние на бизнес по шкале (1 - 10): "); 
-
-                        bool riskPotentialBusinessImpact = int.TryParse(Console.ReadLine(), out int PotentialBusinessImpact);
-
-                        RiskProfileInfo riskProfileInfo = new(riskName, riskDescription, riskBusinessProcess, OccurrenceProbability, PotentialBusinessImpact);
+                        Console.WriteLine("Введите потенциальное влияние на бизнес по шкале (1 - 10): ");
+                        int riskPotentialBusinessImpact;
+                        while (!int.TryParse(Console.ReadLine(), out riskPotentialBusinessImpact))
+                        {
+                            Console.WriteLine("Неправильно введенные данные, пожалуйста ведите число от 0 до 10");
+                        }
+                        
+                        RiskProfileInfo riskProfileInfo = new()
+                        {
+                            Name = riskName,
+                            Description = riskDescription,
+                            BusinessProcess = riskBusinessProcess,
+                            OccurrenceProbability = riskOccurrenceProbability,
+                            PotentialBusinessImpact = riskPotentialBusinessImpact
+                        };
 
                         riskProfileService.Create(riskProfileInfo);
                         break;
@@ -90,5 +101,4 @@ file static class CommandHelper
     public const string CreateRiskProfileDescription = "Creates Risk Profile";
 
     public const string UnknownCommandMessage = "Unknown command, use help to see list of available commands.";
-
 }

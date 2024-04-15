@@ -1,49 +1,40 @@
-﻿using System.Diagnostics;
+﻿using AutoMapper;
 
-using AutoMapper;
-using Erm.BusinessLayer;
-using Erm.BusinessLayer.Validators;
 using Erm.DataAccess;
 using FluentValidation;
-using FluentValidation.Results;
 
+using Project_ERM.Erm.BusinessLayer.Validators;
 using Project_ERM.Erm.DataAccess;
 using Project_ERM.Erm.DataAccess.Repositories;
-
 namespace Project_ERM.Erm.BusinessLayer.Services;
-public sealed class RiskProfileService : IRiskProfileService
+public sealed class RiskProfileService(
+    IValidator<RiskProfileInfo> validator,
+    RiskProfileRepositoryProxy profileRepositoryProxy,
+    IMapper mapper) : IRiskProfileService
 {
-    private readonly IRiskProfileRepository _repository;
-    private readonly IMapper _mapper;
-    private readonly RiskProfileInfoValidator _validationRules;
-
-
-    public RiskProfileService()
+    private readonly IMapper _mapper = mapper;
+    private readonly IValidator<RiskProfileInfo> _validationRules = validator;
+    private readonly RiskProfileRepositoryProxy _repository = profileRepositoryProxy;
+    public void Create(RiskProfileInfo riskProfileInfo)
     {
-        _validationRules = new();
-        _repository = new RiskProfileRepository();
-        _mapper = AutoMapperHelper.MapperConfiguration.CreateMapper(); // MapperConfiguration содержит информацию о классах, который он будет преобразовывать один в другой
-    }
-
-    public void Create(RiskProfileInfo profileInfo)
-    {
-        _validationRules.ValidateAndThrow(profileInfo);
-        RiskProfile riskProfile= _mapper.Map<RiskProfile>(profileInfo);
+        _validationRules.ValidateAndThrow(riskProfileInfo);
+        RiskProfile riskProfile = _mapper.Map<RiskProfile>(riskProfileInfo);
         _repository.Create(riskProfile);
 
+        #region MyRegion
         /*//RiskProfileInfoValidator validationRules = new();
-        //ValidationResult result = validationRules.Validate(profileInfo);
-
-        //if (!result.IsValid)
-        //{
-        //    foreach (ValidationFailure failure in result.Errors)
-        //    {
-        //        Debug.WriteLine(failure.ErrorMessage);
-        //    }
-        //}
-        //_validationRules.ValidateAndThrow(profileInfo);
-        //RiskProfile riskProfile = _mapper.Map<RiskProfile>(profileInfo);
-        //_repository.Create(riskProfile);*/
+               //ValidationResult result = validationRules.Validate(profileInfo);
+               //if (!result.IsValid)
+               //{
+               //    foreach (ValidationFailure failure in result.Errors)
+               //    {
+               //        Debug.WriteLine(failure.ErrorMessage);
+               //    }
+               //}
+               //_validationRules.ValidateAndThrow(profileInfo);
+               //RiskProfile riskProfile = _mapper.Map<RiskProfile>(profileInfo);
+               //_repository.Create(riskProfile);*/
+        #endregion
     }
 
     public IEnumerable<RiskProfileInfo> Query(string query)

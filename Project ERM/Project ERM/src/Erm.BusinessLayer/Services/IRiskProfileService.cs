@@ -1,11 +1,9 @@
-﻿using Erm.BusinessLayer;
-
+﻿
 namespace Project_ERM.Erm.BusinessLayer.Services;
 
 public interface IRiskProfileService
 {
-    void Create(RiskProfileInfo profileInfo);
-
+    public void Create(RiskProfileInfo riskProfileInfo);
     IEnumerable<RiskProfileInfo> Query(string query);
 
 }

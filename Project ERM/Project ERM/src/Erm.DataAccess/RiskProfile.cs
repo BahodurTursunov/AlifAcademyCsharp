@@ -1,17 +1,13 @@
-﻿using Erm.BusinessLayer;
-
+﻿
 namespace Project_ERM.Erm.DataAccess;
 
 public sealed class RiskProfile()
 {
     private int _occurrenceProbability;
     private int _potentialBusinessImpact;
-
     public int Id { get; set; }
-
     public int BusinessProcessId { get; set; }
-
-    public required string RiskName { get; set; } // название риска
+    public required string? RiskName { get; set; } // название риска
     public required string? Description { get; set; } // описание/характеристика риска
     public required BusinessProcess BusinessProcess { get; set; } // связанные бизнес-процессы, или подразделения
     public required int OccurrenceProbability // вероятность возникновения риска

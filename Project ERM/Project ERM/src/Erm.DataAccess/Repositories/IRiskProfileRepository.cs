@@ -1,8 +1,6 @@
-﻿using Project_ERM.Erm.DataAccess;
+﻿namespace Project_ERM.Erm.DataAccess.Repositories;
 
-namespace Erm.DataAccess;
-
-public interface IRiskProfileRepository
+internal interface IRiskProfileRepository
 {
     public void Create(RiskProfile entity);
     public RiskProfile Get(string name);

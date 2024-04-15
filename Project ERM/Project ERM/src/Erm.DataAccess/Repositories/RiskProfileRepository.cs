@@ -1,16 +1,14 @@
-﻿using Erm.DataAccess;
-
+﻿using Project_ERM.Erm.DataAccess.DataBaseContext;
 namespace Project_ERM.Erm.DataAccess.Repositories;
 
-public sealed class RiskProfileRepository : IRiskProfileRepository
+public sealed class RiskProfileRepository(ErmDbContext dbContext) : IRiskProfileRepository
 {
-    private readonly ErmDbContext.ErmDbContext _db = new();
     public void Create(RiskProfile entity)
     {
-        _db.RiskProfiles.Add(entity);
-        _db.SaveChanges();
+        dbContext.Add(entity);
+        dbContext.SaveChanges();
     }
-    public IEnumerable<RiskProfile> Query(string query) => _db.RiskProfiles.Where(x => x.RiskName.Contains(query) || x.Description.Contains(query)).ToArray();
+    public IEnumerable<RiskProfile> Query(string query) => dbContext.RiskProfiles.Where(x => x.RiskName.Contains(query) || x.Description.Contains(query)).ToArray();
         /*// метод where делает то что написано ниже
         //foreach (RiskProfile riskProfile in _db)
         //{
@@ -22,13 +20,13 @@ public sealed class RiskProfileRepository : IRiskProfileRepository
 
     public void Delete(string name)
     {
-        _db.RiskProfiles.Where(x => x.RiskName.Equals(name)).ExecuteDelete();
-        _db.SaveChanges();
+        dbContext.RiskProfiles.Where(x => x.RiskName.Equals(name)).ExecuteDelete();
+        dbContext.SaveChanges();
     }
-    public RiskProfile Get(string name) => _db.RiskProfiles.Single(x => x.RiskName.Equals(name));
+    public RiskProfile Get(string name) => dbContext.RiskProfiles.Single(x => x.RiskName.Equals(name));
     public void Update(string name, RiskProfile riskProfile)
     {
-        RiskProfile profileToUpdate = _db.RiskProfiles.Single(x => x.RiskName.Equals(name));
+        RiskProfile profileToUpdate = dbContext.RiskProfiles.Single(x => x.RiskName.Equals(name));
         
         profileToUpdate.RiskName = riskProfile.RiskName;
         profileToUpdate.Description = riskProfile.Description;
@@ -36,7 +34,7 @@ public sealed class RiskProfileRepository : IRiskProfileRepository
         profileToUpdate.PotentialSolution = riskProfile.PotentialSolution;
         profileToUpdate.OccurrenceProbability = riskProfile.OccurrenceProbability;
         
-        _db.SaveChanges();
+        dbContext.SaveChanges();
     }
 }
 // еще есть метод asnotracking перед where

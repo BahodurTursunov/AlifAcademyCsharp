@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Project_ERM.Erm.DataAccess.ErmDbContext;
+using Project_ERM.Erm.DataAccess.DataBaseContext;
 
 #nullable disable
 
 namespace Project_ERM.Migrations
 {
     [DbContext(typeof(ErmDbContext))]
-    [Migration("20240411183949_init")]
-    partial class init
+    [Migration("20240413071655_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
