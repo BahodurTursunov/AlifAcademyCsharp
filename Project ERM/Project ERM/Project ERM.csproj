@@ -9,6 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Folder Include="src\Erm.PresentationLayer.WebApi\" />
         <Folder Include="tests\" />
     </ItemGroup>
 

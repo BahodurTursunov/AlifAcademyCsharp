@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-
 using Erm.DataAccess;
 using FluentValidation;
 
@@ -7,19 +6,18 @@ using Project_ERM.Erm.BusinessLayer.Validators;
 using Project_ERM.Erm.DataAccess;
 using Project_ERM.Erm.DataAccess.Repositories;
 namespace Project_ERM.Erm.BusinessLayer.Services;
-public sealed class RiskProfileService(
-    IValidator<RiskProfileInfo> validator,
-    RiskProfileRepositoryProxy profileRepositoryProxy,
-    IMapper mapper) : IRiskProfileService
+public sealed class RiskProfileService : IRiskProfileService
 {
-    private readonly IMapper _mapper = mapper;
-    private readonly IValidator<RiskProfileInfo> _validationRules = validator;
-    private readonly RiskProfileRepositoryProxy _repository = profileRepositoryProxy;
+    private readonly IMapper _mapper = null!;
+    private readonly RiskProfileInfoValidator _validationRules;
+    private readonly RiskProfileRepositoryProxy _redisRepository = null!;
+    private readonly RiskProfileRepository _originalRepository = null!;
     public void Create(RiskProfileInfo riskProfileInfo)
     {
         _validationRules.ValidateAndThrow(riskProfileInfo);
         RiskProfile riskProfile = _mapper.Map<RiskProfile>(riskProfileInfo);
-        _repository.Create(riskProfile);
+        _redisRepository.Create(riskProfile);
+        _originalRepository.Create(riskProfile);
 
         #region MyRegion
         /*//RiskProfileInfoValidator validationRules = new();
@@ -40,7 +38,7 @@ public sealed class RiskProfileService(
     public IEnumerable<RiskProfileInfo> Query(string query)
     {
         ArgumentException.ThrowIfNullOrEmpty(query);
-        IEnumerable<RiskProfile> riskProfiles = _repository.Query(query);
+        IEnumerable<RiskProfile> riskProfiles = _originalRepository.Query(query);
         return _mapper.Map<IEnumerable<RiskProfileInfo>>(riskProfiles);
     }
 }
