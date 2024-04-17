@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 
+using Erm.BusinessLayer;
 
 using Project_ERM.Erm.DataAccess;
 
@@ -13,12 +14,13 @@ public sealed class RiskProfileInfoProfile : Profile // Profile содержит
             .ForMember(dest => dest.RiskName, opt => opt.MapFrom(src => src.Name)) // здесь в RiskName будет присваиваться значение из DTO RiskProfile
             .ForMember(dest => dest.BusinessProcess,
                 opt => opt.MapFrom(src => new BusinessProcess()
-                    {
-                        Name = src.BusinessProcess,
-                        Domain = src.BusinessProcess
-                    }))
+                {
+                    Name = src.BusinessProcess,
+                    Domain = src.BusinessProcess
+                }))
             .ReverseMap()
             .ForMember(dest => dest.BusinessProcess, opt => opt.MapFrom(src => src.BusinessProcess.Name))
             .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.RiskName));
+        CreateMap<RiskProfile, RiskProfileInfo>();
     }
 }

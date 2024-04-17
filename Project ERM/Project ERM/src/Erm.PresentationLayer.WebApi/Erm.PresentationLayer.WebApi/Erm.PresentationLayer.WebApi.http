@@ -1,0 +1,6 @@
+@Erm.PresentationLayer.WebApi_HostAddress = http://localhost:5108
+
+GET {{Erm.PresentationLayer.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

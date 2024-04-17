@@ -1,3 +1,5 @@
+using Erm.BusinessLayer;
+
 using Project_ERM.Erm.DataAccess;
 namespace Project_ERM.Erm.BusinessLayer;
 internal static class RiskProfileInfoExtention

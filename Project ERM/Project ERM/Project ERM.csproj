@@ -5,11 +5,9 @@
         <TargetFramework>net8.0</TargetFramework>
         <RootNamespace>Project_ERM</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="src\Erm.PresentationLayer.WebApi\" />
         <Folder Include="tests\" />
     </ItemGroup>
 

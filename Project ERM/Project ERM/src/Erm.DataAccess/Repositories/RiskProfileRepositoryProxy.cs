@@ -39,7 +39,7 @@ public sealed class RiskProfileRepositoryProxy : IRiskProfileRepository
         RiskProfile profile = JsonSerializer.Deserialize<RiskProfile>(redisProfileJsonStr) ?? throw new InvalidOperationException();
         return profile;
     }
-   
+
     public IEnumerable<RiskProfile> Query(string query) => _redisRepository.Query(query);
 
     public void Update(string name, RiskProfile riskProfile) => _redisRepository.Update(name, riskProfile);

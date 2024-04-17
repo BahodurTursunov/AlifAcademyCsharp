@@ -11,8 +11,8 @@ namespace Project_ERM.Erm.BusinessLayer.Services
 
         //// чтобы использоваться автомаппер, мы должны создать configuration, зачем он нужен? он нужен нам чтобы он мог преобразовывать один к другому. 
         internal readonly static MapperConfiguration MapperConfiguration = new(opt =>
-            {
-                opt.AddProfile<RiskProfileInfoProfile>();
-            });
+        {
+            opt.AddProfile<RiskProfileInfoProfile>();
+        });
     }
 }

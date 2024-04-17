@@ -1,20 +1,20 @@
-﻿using Project_ERM.Erm.BusinessLayer;
+﻿using Erm.BusinessLayer;
 using Project_ERM.Erm.BusinessLayer.Services;
 class Program
 {
     static void Main(string[] args)
     {
         IRiskProfileService riskProfileService = new RiskProfileService();
-        
-        string? cmd = string.Empty; 
+
+        string? cmd = string.Empty;
 
         while (!cmd.Equals(CommandHelper.ExitCommand))
         {
             try
             {
-                cmd = Console.ReadLine();
-
                 Console.ForegroundColor = ConsoleColor.Gray; // Reset console foreground color to default.
+
+                cmd = Console.ReadLine();
 
                 Console.Write(CommandHelper.InputSymbol);
 
@@ -22,13 +22,13 @@ class Program
                 {
                     case CommandHelper.CreateRiskProfileCommand:
                         Console.WriteLine("Введите имя риска: ");
-                        string? riskName = Console.ReadLine();
+                        string riskName = Console.ReadLine();
 
                         Console.WriteLine("Введите описание риска: ");
-                        string? riskDescription = Console.ReadLine();
+                        string riskDescription = Console.ReadLine();
 
                         Console.WriteLine("Введите название бизнесс процесса и область применения: ");
-                        string? riskBusinessProcess = Console.ReadLine();
+                        string riskBusinessProcess = Console.ReadLine();
 
                         Console.WriteLine("Введите возникновение риска по шкале (1 - 10): ");
                         int riskOccurrenceProbability;
@@ -43,7 +43,7 @@ class Program
                         {
                             Console.WriteLine("Неправильно введенные данные, пожалуйста ведите число от 0 до 10");
                         }
-                        
+
                         RiskProfileInfo riskProfileInfo = new()
                         {
                             Name = riskName,
@@ -62,8 +62,8 @@ class Program
                         foreach (var item in profileInfos)
                         {
                             Console.WriteLine(item);
-                        } 
-                        
+                        }
+
                         break;
                     case CommandHelper.HelpCommand:
                         Console.WriteLine(CommandHelper.InputSymbol + CommandHelper.CreateRiskProfileCommand + " -> " + CommandHelper.CreateRiskProfileDescription); break;
@@ -94,7 +94,7 @@ file static class CommandHelper
 
     public const string HelpCommand = "help";
 
-    public const string CreateRiskProfileCommand = "create_profile";
+    public const string CreateRiskProfileCommand = "cr";
 
     public const string QueryRiskProfileCommand = "search_profile";
 

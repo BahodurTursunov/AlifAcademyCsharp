@@ -29,8 +29,8 @@ namespace Project_ERM.Erm.DataAccess.Configurations
              .Property(p => p.OccurrenceProbability)
              .HasColumnName("OccurrenceProbability")
              .HasColumnType("INTEGER)")
-             .IsRequired(); 
-            
+             .IsRequired();
+
             builder
              .Property(p => p.PotentialBusinessImpact)
              .HasColumnName("PotentialBusinessImpact")
