@@ -8,4 +8,6 @@ public interface IRiskProfileService
     public void Create(RiskProfileInfo riskProfileInfo);
     IEnumerable<RiskProfileInfo> Query(string query);
 
+    RiskProfileInfo Get(string name);
+
 }

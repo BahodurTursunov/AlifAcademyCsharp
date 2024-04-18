@@ -10,9 +10,6 @@ namespace Project_ERM.Erm.BusinessLayer.Services
         //// сделали мы его readonly static для того, чтобы он был доступен во всей сборке
 
         //// чтобы использоваться автомаппер, мы должны создать configuration, зачем он нужен? он нужен нам чтобы он мог преобразовывать один к другому. 
-        internal readonly static MapperConfiguration MapperConfiguration = new(opt =>
-        {
-            opt.AddProfile<RiskProfileInfoProfile>();
-        });
+        internal readonly static MapperConfiguration MapperConfiguration = new(opt => opt.AddProfile<RiskProfileInfoProfile>());
     }
 }

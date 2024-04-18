@@ -1,34 +1,38 @@
 ﻿using AutoMapper;
 using Erm.BusinessLayer;
-using Erm.DataAccess;
 using FluentValidation;
 
 using Project_ERM.Erm.BusinessLayer.Mapper;
 using Project_ERM.Erm.BusinessLayer.Validators;
 using Project_ERM.Erm.DataAccess;
+using Project_ERM.Erm.DataAccess.DataBaseContext;
+using Project_ERM.Erm.DataAccess.Repositories;
+
 
 namespace Project_ERM.Erm.BusinessLayer.Services;
 public sealed class RiskProfileService : IRiskProfileService
 {
+    private readonly RiskProfileRepository _repository;
+
     private readonly IMapper _mapper;
 
-    private readonly IValidator<RiskProfileInfo> _validationRules = new RiskProfileInfoValidator();
+    private readonly RiskProfileInfoValidator _validationRules;
 
     private readonly RiskProfileRepositoryProxy _redisRepository;
 
 
-    //public RiskProfileService(IMapper mapper, IValidator<RiskProfileInfo> validationRules, RiskProfileRepositoryProxy redisRepository)
-    //{
-    //    _mapper = mapper;
-    //    _validationRules = validationRules;
-    //    _redisRepository = redisRepository;
-    //}
+    public RiskProfileService(RiskProfileRepository riskProfileRepositoryProxy) 
+    {
+        _validationRules = new();
+        _repository = riskProfileRepositoryProxy;
+        _mapper = AutoMapperHelper.MapperConfiguration.CreateMapper();
+    }
 
     public void Create(RiskProfileInfo riskProfileInfo)
     {
         _validationRules.ValidateAndThrow(riskProfileInfo);
         RiskProfile riskProfile = _mapper.Map<RiskProfile>(riskProfileInfo);
-        _redisRepository.Create(riskProfile);
+        _repository.Create(riskProfile);
 
         #region MyRegion
         /*//RiskProfileInfoValidator validationRules = new();
@@ -46,10 +50,16 @@ public sealed class RiskProfileService : IRiskProfileService
         #endregion
     }
 
+    public RiskProfileInfo Get(string name)
+    {
+        ArgumentException.ThrowIfNullOrEmpty(name);
+        return _mapper.Map<RiskProfileInfo>(_repository.Get(name));
+    }
+
     public IEnumerable<RiskProfileInfo> Query(string query)
     {
         ArgumentException.ThrowIfNullOrEmpty(query);
-        IEnumerable<RiskProfile> riskProfiles = _redisRepository.Query(query);
+        IEnumerable<RiskProfile> riskProfiles = _repository.Query(query);
         return _mapper.Map<IEnumerable<RiskProfileInfo>>(riskProfiles);
     }
 }

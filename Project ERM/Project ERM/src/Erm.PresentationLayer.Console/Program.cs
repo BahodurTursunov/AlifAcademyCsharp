@@ -1,12 +1,17 @@
 ﻿using Erm.BusinessLayer;
+
 using Project_ERM.Erm.BusinessLayer.Services;
-class Program
+using Project_ERM.Erm.DataAccess;
+using Project_ERM.Erm.DataAccess.Repositories;
+
+
+public class Program
 {
     static void Main(string[] args)
     {
-        IRiskProfileService riskProfileService = new RiskProfileService();
+        IRiskProfileService riskProfileService = new RiskProfileService(new RiskProfileRepositoryProxy(new RiskProfileRepository()));
 
-        string? cmd = string.Empty;
+        string cmd = string.Empty;
 
         while (!cmd.Equals(CommandHelper.ExitCommand))
         {
@@ -57,14 +62,19 @@ class Program
                         break;
 
                     case CommandHelper.QueryRiskProfileCommand:
-                        string? query = Console.ReadLine();
+                        string query = Console.ReadLine();
                         IEnumerable<RiskProfileInfo> profileInfos = riskProfileService.Query(query);
                         foreach (var item in profileInfos)
                         {
                             Console.WriteLine(item);
                         }
-
                         break;
+
+                    case CommandHelper.GetRiskProfileCommand:
+                        string name = Console.ReadLine();
+                        Console.WriteLine(riskProfileService.Get(name));
+                        break;
+
                     case CommandHelper.HelpCommand:
                         Console.WriteLine(CommandHelper.InputSymbol + CommandHelper.CreateRiskProfileCommand + " -> " + CommandHelper.CreateRiskProfileDescription); break;
 
@@ -85,7 +95,6 @@ class Program
         }
     }
 }
-
 file static class CommandHelper
 {
     public const string InputSymbol = "> ";
@@ -95,6 +104,8 @@ file static class CommandHelper
     public const string HelpCommand = "help";
 
     public const string CreateRiskProfileCommand = "cr";
+
+    public const string GetRiskProfileCommand = "gp";
 
     public const string QueryRiskProfileCommand = "search_profile";
 

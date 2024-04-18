@@ -21,6 +21,6 @@ public sealed class RiskProfileInfoProfile : Profile // Profile содержит
             .ReverseMap()
             .ForMember(dest => dest.BusinessProcess, opt => opt.MapFrom(src => src.BusinessProcess.Name))
             .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.RiskName));
-        CreateMap<RiskProfile, RiskProfileInfo>();
+        //CreateMap<RiskProfile, RiskProfileInfo>();
     }
 }

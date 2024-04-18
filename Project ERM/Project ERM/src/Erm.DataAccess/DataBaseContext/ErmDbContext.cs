@@ -1,13 +1,13 @@
 ﻿using System.Reflection;
 namespace Project_ERM.Erm.DataAccess.DataBaseContext
 {
-    public sealed class ErmDbContext(DbContextOptions options) : DbContext(options)
+    public sealed class ErmDbContext : DbContext
     {
         private const string ConnectionString = "Server=BAKHACOMP;Database=ErmDb;Trusted_Connection=True;TrustServerCertificate=True;";
 
         //#nullable disable - этим способом можно выключить nullable в определенных местах а не во всем проекте
-        public DbSet<RiskProfile> RiskProfiles { get; set; }
         public DbSet<BusinessProcess> BusinessProcesses { get; set; } /*=> Set<BusinessProcess>(); этот метод используется если ругается анализатор*/
+        public DbSet<RiskProfile> RiskProfiles { get; set; }
         //#nullable enable -- и надо обязательно включать обратно
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
             optionsBuilder.UseSqlServer(ConnectionString);

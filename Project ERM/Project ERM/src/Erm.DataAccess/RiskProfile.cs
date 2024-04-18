@@ -22,5 +22,5 @@ public sealed class RiskProfile()
         set => _potentialBusinessImpact = (value < 1 || value > 10)
             ? throw new ArgumentOutOfRangeException(nameof(value)) : value;
     }
-    public string? PotentialSolution { get; set; } // потенциальное решение риска
+    public string PotentialSolution { get; set; } // потенциальное решение риска
 }
