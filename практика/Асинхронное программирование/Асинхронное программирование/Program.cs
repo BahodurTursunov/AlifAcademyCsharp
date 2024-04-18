@@ -1,31 +1,36 @@
 ﻿
-Coffee coffee = PourCoffee();
-Egg egg = FryEgg();
-Toast toast = ToastBread();
-
-1:02:58 
-Coffee PourCoffee()
+Task<Coffee> coffeeTask = PourCoffeeAsync();
+Task<Egg> eggTask = FryEggAsync();
+Task<Toast> toastTask = ToastBreadAsync();
+await coffeeTask;
+await eggTask;
+await toastTask;
+async Task<Coffee> PourCoffeeAsync()
 {
     Console.WriteLine("Pour coffee.....");
-    Thread.Sleep(1000);
+    await Task.Delay(2000);
+    Console.WriteLine("Pouring coffee finished.....");
     return new();
 }
-Egg FryEgg()
+async Task<Egg> FryEggAsync()
 {
     Console.WriteLine("Frying eggs.....");
-    Thread.Sleep(1000);
+    await Task.Delay(2000);
+    Console.WriteLine("Frying finished.....");
     return new();
 }
 
-Toast ToastBread()
+async Task<Toast> ToastBreadAsync()
 {
     Console.WriteLine("Toast bread.....");
-    Thread.Sleep(1000);
+    await Task.Delay(2000);
+    Console.WriteLine("Toasting bread finished.....");
     return new();
+
 }
 
 
-class Coffee{ }
+class Coffee { }
 class Egg { }
 class Toast { }
 
