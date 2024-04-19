@@ -1,17 +1,14 @@
 ﻿
-Task<Coffee> coffeeTask = PourCoffeeAsync();
-Task<Egg> eggTask = FryEggAsync();
-Task<Toast> toastTask = ToastBreadAsync();
-await coffeeTask;
-await eggTask;
-await toastTask;
+Coffee coffeeTask = await PourCoffeeAsync();
+Egg eggTask = await FryEggAsync();
+Toast toastTask = await ToastBreadAsync();
 async Task<Coffee> PourCoffeeAsync()
 {
     Console.WriteLine("Pour coffee.....");
     await Task.Delay(2000);
     Console.WriteLine("Pouring coffee finished.....");
     return new();
-}
+}   
 async Task<Egg> FryEggAsync()
 {
     Console.WriteLine("Frying eggs.....");
@@ -28,8 +25,6 @@ async Task<Toast> ToastBreadAsync()
     return new();
 
 }
-
-
 class Coffee { }
 class Egg { }
 class Toast { }
