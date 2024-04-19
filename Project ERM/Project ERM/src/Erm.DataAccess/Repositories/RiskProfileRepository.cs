@@ -1,38 +1,46 @@
-﻿using Project_ERM.Erm.DataAccess.DataBaseContext;
+﻿using Project_ERM.src.Erm.DataAccess;
 
 namespace Project_ERM.Erm.DataAccess.Repositories;
 public sealed class RiskProfileRepository : IRiskProfileRepository
 {
     private readonly ErmDbContext _db = new();
-    public void Create(RiskProfile entity)
+    public async Task CreateAsync(RiskProfile entity, CancellationToken token = default)
     {
-        _db.RiskProfiles.Add(entity);
-        _db.SaveChanges();
+        await _db.RiskProfiles.AddAsync(entity, token);
+        await _db.SaveChangesAsync(token);
     }
 
-    public void Delete(string name)
+    public async Task DeleteAsync(string name, CancellationToken token = default)
     {
-        _db.RiskProfiles.Where(x => x.RiskName.Equals(name)).ExecuteDelete();
-        _db.SaveChanges();
+        await _db.RiskProfiles.Where(x => x.RiskName.Equals(name)).ExecuteDeleteAsync(token);
+        await _db.SaveChangesAsync(token);
     }
 
-    public RiskProfile Get(string name) 
-        => _db.RiskProfiles
+    public async Task<RiskProfile> GetAsync(string name, CancellationToken token = default) // мы можем убрать async await потому что SingleAsync принимает такое
+        => await _db.RiskProfiles
         .AsNoTracking()
         .Include(i => i.BusinessProcess)
-        .Single(x => x.RiskName.Equals(name));
-    public IEnumerable<RiskProfile> Query(string query) 
-        => _db.RiskProfiles
-        .AsNoTracking()
-        .Include(i=>i.BusinessProcess)
-        .Where(x => x.RiskName.Contains(query) || x.Description.Contains(query)).ToArray();
+        .SingleAsync(x => x.RiskName.Equals(name), token);
 
-    public void Update(string name, RiskProfile riskProfile)
+    public async Task<IEnumerable<RiskProfile>> QueryAsync(string query, CancellationToken token = default)
+        => await _db.RiskProfiles
+        .AsNoTracking()
+        .Include(i => i.BusinessProcess)
+        .Where(x => x.RiskName.Contains(query) || x.Description.Contains(query)).ToArrayAsync(token);
+
+    public async Task UpdateAsync(string name, RiskProfile riskProfile, CancellationToken token = default)
     {
-        throw new NotImplementedException();
+        RiskProfile profileToUpdate = await _db.RiskProfiles.SingleAsync(x => x.RiskName.Equals(name), token);
+
+        profileToUpdate.RiskName = riskProfile.RiskName;
+        profileToUpdate.Description = riskProfile.Description;
+        profileToUpdate.PotentialBusinessImpact = riskProfile.PotentialBusinessImpact;
+        //profileToUpdate.PotentialSolution = riskProfile.PotentialSolution;
+        profileToUpdate.OccurrenceProbability = riskProfile.OccurrenceProbability;
+
+        await _db.SaveChangesAsync(token);
     }
 
-   
     /*// метод where делает то что написано ниже
 //foreach (RiskProfile riskProfile in _db)
 //{
@@ -42,23 +50,7 @@ public sealed class RiskProfileRepository : IRiskProfileRepository
 //    }
 //}*/
 
-    //public void Delete(string name)
-    //{
-    //    _db.RiskProfiles.Where(x => x.RiskName.Equals(name)).ExecuteDelete();
-    //    _db.SaveChanges();
-    //}
-    //public RiskProfile Get(string name) => _db.RiskProfiles.Single(x => x.RiskName.Equals(name));
-    //public void Update(string name, RiskProfile riskProfile)
-    //{
-    //    RiskProfile profileToUpdate = _db.RiskProfiles.Single(x => x.RiskName.Equals(name));
 
-    //    profileToUpdate.RiskName = riskProfile.RiskName;
-    //    profileToUpdate.Description = riskProfile.Description;
-    //    profileToUpdate.PotentialBusinessImpact = riskProfile.PotentialBusinessImpact;
-    //    profileToUpdate.PotentialSolution = riskProfile.PotentialSolution;
-    //    profileToUpdate.OccurrenceProbability = riskProfile.OccurrenceProbability;
 
-    //    _db.SaveChanges();
-    //}
 }
 // еще есть метод asnotracking перед where

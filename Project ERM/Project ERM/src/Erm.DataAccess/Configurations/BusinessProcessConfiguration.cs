@@ -6,30 +6,30 @@ namespace Project_ERM.Erm.DataAccess.Configurations
     {
         public void Configure(EntityTypeBuilder<BusinessProcess> builder)
         {
-            builder.ToTable("BusinessProcess");
+            builder.ToTable("business_process");
 
             builder
-               .Property(p => p.Id)// здесь к определенному свойсву мы можем --
-               .HasColumnName("Id")// задать имя
-               .IsRequired();
+            .Property(bp => bp.Id)
+            .HasColumnName("Id")
+            .IsRequired();
 
             builder
-               .Property(p => p.Name)
-               .HasColumnName("Name")
-               .HasColumnType("NVARCHAR(50)")
-               .IsRequired();
+            .Property(bp => bp.Name)
+            .HasColumnName("Name")
+            .HasColumnType("VARCHAR(50)")
+            .IsRequired();
 
             builder
-               .Property(p => p.Domain)
-               .HasColumnName("Domain")
-               .HasColumnType("NVARCHAR(50)")
-               .IsRequired();
+            .Property(bp => bp.Domain)
+            .HasColumnName("Domain")
+            .HasColumnType("VARCHAR(50)")
+            .IsRequired();
 
             builder
-                .HasMany(p => p.RiskProfiles)
-                .WithOne(p => p.BusinessProcess)
-                .HasForeignKey(fk => fk.BusinessProcessId)
-                .IsRequired();
+            .HasMany(bp => bp.RiskProfiles)
+            .WithOne(bp => bp.BusinessProcess)
+            .HasForeignKey(fk => fk.BusinessProcessId)
+            .IsRequired();
 
             builder.HasKey(k => k.Id);
         }

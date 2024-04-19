@@ -22,37 +22,37 @@ public sealed class RiskProfileRepositoryProxy : IRiskProfileRepository
         _redisDb = connectionMultiplexer.GetDatabase();
     }
 
-    public void Create(RiskProfile entity)
-    {
-        _originalRepository.Create(entity); // TODO: SET realisation in here
-    }
-
-    public void Delete(string name) => _originalRepository.Delete(name);
+    public  Task CreateAsync(RiskProfile entity, CancellationToken token = default) =>  _originalRepository.CreateAsync(entity, token); // TODO: SET realisation in here
+    
+    // и если наши типы имеют одинаковые названия (совпадают по назнавиям), то не обязательно писать async await, потому что создается какая то проверка и генерируется много кода
+    public  Task DeleteAsync(string name, CancellationToken token = default) =>  _originalRepository.DeleteAsync(name, token);
 
 
-    public RiskProfile Get(string name)
+    public async Task<RiskProfile> GetAsync(string name, CancellationToken token = default)
     {
         // REDIS DB GET
-        RedisValue redisValue = _redisDb.StringGet(name);
+        RedisValue redisValue = await _redisDb.StringGetAsync(name);
 
         if (redisValue.IsNullOrEmpty)
         {
-            RiskProfile profileFromDb =  _originalRepository.Get(name);
+            RiskProfile profileFromDb =  await _originalRepository.GetAsync(name, token);
 
             string redisProfileJson = JsonSerializer.Serialize(profileFromDb);
 
-            _redisDb.StringSet(name, redisProfileJson);
+            await _redisDb.StringSetAsync(name, redisProfileJson);
 
             return profileFromDb;
         }
 
         string redisProfileJsonStr = redisValue.ToString();
+
         RiskProfile profile = JsonSerializer.Deserialize<RiskProfile>(redisProfileJsonStr) ?? throw new InvalidOperationException();
+
         return profile;
     }
 
-    public IEnumerable<RiskProfile> Query(string query) => _originalRepository.Query(query);
+    public  Task<IEnumerable<RiskProfile>> QueryAsync(string query, CancellationToken token = default) =>  _originalRepository.QueryAsync(query, token);
 
-    public void Update(string name, RiskProfile riskProfile) => _originalRepository.Update(name, riskProfile);
+    public Task UpdateAsync(string name, RiskProfile riskProfile, CancellationToken token = default) => _originalRepository.UpdateAsync(name, riskProfile, token);
 
 }

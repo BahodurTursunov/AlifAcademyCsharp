@@ -1,54 +1,56 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Project_ERM.Erm.DataAccess.Configurations
+using Project_ERM.Erm.DataAccess;
+
+namespace Erm.DataAccess;
+
+public sealed class RiskProfileConfiguration : IEntityTypeConfiguration<RiskProfile>
 {
-    public sealed class RiskProfileConfiguration : IEntityTypeConfiguration<RiskProfile>
+    public void Configure(EntityTypeBuilder<RiskProfile> builder)
     {
-        public void Configure(EntityTypeBuilder<RiskProfile> builder)
-        {
-            builder.ToTable("RiskProfile");
+        builder.ToTable("RiskProfiles");
 
-            builder
-                .Property(p => p.Id)// здесь к определенному свойсву мы можем ->
-                .HasColumnName("Id")// задать имя
-                .IsRequired();
+        builder
+        .Property(bp => bp.Id)
+        .HasColumnName("Id")
+        .IsRequired();
 
-            builder
-               .Property(p => p.RiskName)
-               .HasColumnName("Name")
-               .HasColumnType("NVARCHAR(50)")
-               .IsRequired();
+        builder
+        .Property(bp => bp.RiskName)
+        .HasColumnName("RiskName")
+        .HasColumnType("VARCHAR(50)")
+        .IsRequired();
 
-            builder
-               .Property(p => p.Description)
-               .HasColumnName("Description")
-               .HasColumnType("NVARCHAR(500)")
-               .IsRequired();
+        builder
+        .Property(bp => bp.Description)
+        .HasColumnName("Description")
+        .HasColumnType("VARCHAR(50)")
+        .IsRequired();
 
-            builder
-             .Property(p => p.OccurrenceProbability)
-             .HasColumnName("OccurrenceProbability")
-             .HasColumnType("INTEGER)")
-             .IsRequired();
+        builder
+        .Property(bp => bp.OccurrenceProbability)
+        .HasColumnName("OccurrenceProbability")
+        .HasColumnType("INTEGER")
+        .IsRequired();
 
-            builder
-             .Property(p => p.PotentialBusinessImpact)
-             .HasColumnName("PotentialBusinessImpact")
-             .HasColumnType("INTEGER)")
-             .IsRequired();
+        builder
+        .Property(bp => bp.PotentialBusinessImpact)
+        .HasColumnName("OccurrenceProbability")
+        .HasColumnType("INTEGER")
+        .IsRequired();
 
-            builder
-             .Property(p => p.PotentialSolution)
-             .HasColumnName("PotentialSolution")
-             .HasColumnType("NVARCHAR(100)");
 
-            builder
-                .HasOne(p => p.BusinessProcess)
-                .WithMany(p => p.RiskProfiles)
-                .HasForeignKey(fk => fk.BusinessProcessId)
-                .IsRequired();
+        builder
+        .HasOne(bp => bp.BusinessProcess)
+        .WithMany(bp => bp.RiskProfiles)
+        .HasForeignKey(fk => fk.BusinessProcessId)
+        .IsRequired();
 
-            builder.HasKey(k => k.Id);
-        }
+        builder
+            .Property(bp => bp.BusinessProcessId)
+            .HasColumnName("BusinessProcessId");
+
+        builder.HasKey(k => k.Id);
     }
 }

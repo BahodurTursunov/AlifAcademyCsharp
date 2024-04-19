@@ -176,6 +176,9 @@ csharp_preserve_single_line_statements = true
 # IDE0055: ��������� ��������������
 dotnet_diagnostic.IDE0055.severity = none
 
+# S125: Sections of code should not be commented out
+dotnet_diagnostic.S125.severity = none
+
 [*.{cs,vb}]
 
 # Naming rules

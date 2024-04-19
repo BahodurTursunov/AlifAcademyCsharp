@@ -1,15 +1,12 @@
 ﻿using Erm.BusinessLayer;
 
 using Project_ERM.Erm.BusinessLayer.Services;
-using Project_ERM.Erm.DataAccess;
-using Project_ERM.Erm.DataAccess.Repositories;
-
 
 public class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
-        IRiskProfileService riskProfileService = new RiskProfileService(new RiskProfileRepositoryProxy(new RiskProfileRepository()));
+        IRiskProfileService riskProfileService = new RiskProfileService();
 
         string cmd = string.Empty;
 
@@ -26,6 +23,7 @@ public class Program
                 switch (cmd)
                 {
                     case CommandHelper.CreateRiskProfileCommand:
+
                         Console.WriteLine("Введите имя риска: ");
                         string riskName = Console.ReadLine();
 
@@ -37,6 +35,7 @@ public class Program
 
                         Console.WriteLine("Введите возникновение риска по шкале (1 - 10): ");
                         int riskOccurrenceProbability;
+
                         while (!int.TryParse(Console.ReadLine(), out riskOccurrenceProbability))
                         {
                             Console.WriteLine("Неправильно введенные данные, пожалуйста ведите число от 0 до 10");
@@ -44,6 +43,7 @@ public class Program
 
                         Console.WriteLine("Введите потенциальное влияние на бизнес по шкале (1 - 10): ");
                         int riskPotentialBusinessImpact;
+
                         while (!int.TryParse(Console.ReadLine(), out riskPotentialBusinessImpact))
                         {
                             Console.WriteLine("Неправильно введенные данные, пожалуйста ведите число от 0 до 10");
@@ -58,25 +58,30 @@ public class Program
                             PotentialBusinessImpact = riskPotentialBusinessImpact
                         };
 
-                        riskProfileService.Create(riskProfileInfo);
+                        await riskProfileService.CreateAsync(riskProfileInfo);
+
                         break;
 
                     case CommandHelper.QueryRiskProfileCommand:
                         string query = Console.ReadLine();
-                        IEnumerable<RiskProfileInfo> profileInfos = riskProfileService.Query(query);
-                        foreach (var item in profileInfos)
-                        {
+
+                        IEnumerable<RiskProfileInfo> profileInfos = await riskProfileService.QueryAsync(query);
+
+                        foreach (RiskProfileInfo item in profileInfos)
                             Console.WriteLine(item);
-                        }
+
                         break;
 
                     case CommandHelper.GetRiskProfileCommand:
                         string name = Console.ReadLine();
-                        Console.WriteLine(riskProfileService.Get(name));
+                        Console.WriteLine(await riskProfileService.GetAsync(name));
+
                         break;
 
                     case CommandHelper.HelpCommand:
-                        Console.WriteLine(CommandHelper.InputSymbol + CommandHelper.CreateRiskProfileCommand + " -> " + CommandHelper.CreateRiskProfileDescription); break;
+                        Console.WriteLine(CommandHelper.InputSymbol + CommandHelper.CreateRiskProfileCommand + " -> " + CommandHelper.CreateRiskProfileDescription); 
+                        
+                        break;
 
                     case CommandHelper.ExitCommand:
                         Console.WriteLine("Successfully exit"); break;

@@ -1,38 +1,38 @@
 ﻿using AutoMapper;
+
 using Erm.BusinessLayer;
+
 using FluentValidation;
 
-using Project_ERM.Erm.BusinessLayer.Mapper;
 using Project_ERM.Erm.BusinessLayer.Validators;
 using Project_ERM.Erm.DataAccess;
-using Project_ERM.Erm.DataAccess.DataBaseContext;
 using Project_ERM.Erm.DataAccess.Repositories;
 
 
 namespace Project_ERM.Erm.BusinessLayer.Services;
 public sealed class RiskProfileService : IRiskProfileService
 {
-    private readonly RiskProfileRepository _repository;
+    private readonly IRiskProfileRepository _repository;
 
     private readonly IMapper _mapper;
 
     private readonly RiskProfileInfoValidator _validationRules;
 
-    private readonly RiskProfileRepositoryProxy _redisRepository;
+    //private readonly RiskProfileRepositoryProxy _redisRepository;
 
 
-    public RiskProfileService(RiskProfileRepository riskProfileRepositoryProxy) 
+    public RiskProfileService()
     {
         _validationRules = new();
-        _repository = riskProfileRepositoryProxy;
+        _repository = new RiskProfileRepositoryProxy(new RiskProfileRepository());
         _mapper = AutoMapperHelper.MapperConfiguration.CreateMapper();
     }
 
-    public void Create(RiskProfileInfo riskProfileInfo)
+    public async Task CreateAsync(RiskProfileInfo riskProfileInfo, CancellationToken token = default)
     {
-        _validationRules.ValidateAndThrow(riskProfileInfo);
+        await _validationRules.ValidateAndThrowAsync(riskProfileInfo, token);
         RiskProfile riskProfile = _mapper.Map<RiskProfile>(riskProfileInfo);
-        _repository.Create(riskProfile);
+        await _repository.CreateAsync(riskProfile, token);
 
         #region MyRegion
         /*//RiskProfileInfoValidator validationRules = new();
@@ -50,17 +50,16 @@ public sealed class RiskProfileService : IRiskProfileService
         #endregion
     }
 
-    public RiskProfileInfo Get(string name)
+    public async Task<RiskProfileInfo> GetAsync(string name, CancellationToken token = default)
     {
         ArgumentException.ThrowIfNullOrEmpty(name);
-        return _mapper.Map<RiskProfileInfo>(_repository.Get(name));
+        return _mapper.Map<RiskProfileInfo>(await _repository.GetAsync(name, token));
     }
 
-    public IEnumerable<RiskProfileInfo> Query(string query)
+    public async Task<IEnumerable<RiskProfileInfo>> QueryAsync(string query, CancellationToken token = default)
     {
         ArgumentException.ThrowIfNullOrEmpty(query);
-        IEnumerable<RiskProfile> riskProfiles = _repository.Query(query);
-        return _mapper.Map<IEnumerable<RiskProfileInfo>>(riskProfiles);
+        return _mapper.Map<IEnumerable<RiskProfileInfo>>(await _repository.QueryAsync(query, token));
     }
 }
 
